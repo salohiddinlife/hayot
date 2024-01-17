@@ -1,31 +1,25 @@
 <template>
 <main class="main">
-    <MainSlider/>
-    <MainSaleProducts/>
-    <MainArrivals/>
-    <MainSaving/>
+    <Slider/>
+    <SaleProducts/>
+    <Arrivals/>
+    <Saving/>
+    <Fashion/>
+    <ForMens/>
 </main>
 </template>
 
-<script>
-import MainSlider from '@/components/MainSlider.vue'
-import MainSaleProducts from '@/components/MainSaleProducts.vue'
-import MainArrivals from '@/components/MainArrivals.vue'
-import MainSaving from '@/components/MainSaving.vue'
+<script setup>
+import Slider from '@/components/MainSlider.vue'
+import SaleProducts from '@/components/MainSaleProducts.vue'
+import Arrivals from '@/components/MainArrivals.vue'
+import Saving from '@/components/MainSaving.vue'
+import Fashion from '@/components/MainFashion.vue'
+import ForMens from '@/components/MainForMens.vue'
+import ForWomens from '@/components/MainForWomens.vue'
+import Limelight from '@/components/MainLimeLight.vue'
+import Reviews from '@/components/MainReviews.vue'
 
-export default {
-  components:{
-    MainSlider,
-    MainSaleProducts,
-    MainArrivals,
-    MainSaving
-  },
-  setup () {
-    
-
-    return {}
-  }
-}
 </script>
 
 <style lang="scss" scoped>
