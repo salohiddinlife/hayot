@@ -6,6 +6,7 @@
     <Saving/>
     <Fashion/>
     <ForMens/>
+    <ForWomens/>
 </main>
 </template>
 

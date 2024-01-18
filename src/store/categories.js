@@ -1,20 +1,23 @@
+import axios from 'axios';
 import { defineStore } from 'pinia';
 
-export const categoriesStore = defineStore({
-  id: 'categories',
+export const useProductsStore = defineStore({
+  id: 'products',
   state: () => ({
-    categories: [],
+    products: null,
   }),
   actions: {
-    async loadCategories() {
+    async getImgs() {
       try {
-        const response = await fetch('/src/categories.json');
-        const data = await response.json();
-        this.categories = data;
-        console.log(this.categories);
+        const response = await axios.get("https://65a7bd4094c2c5762da76bd2.mockapi.io/hayot/v1/Category");
+        this.products = response.data[0];
+        console.log(response.data[0]);
       } catch (error) {
-        console.error('Error loading categories:', error);
+        console.error("Error fetching images:", error);
       }
     },
+  },
+  getters: {
+
   },
 });
