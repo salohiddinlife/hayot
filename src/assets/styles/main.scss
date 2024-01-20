@@ -2,7 +2,6 @@
 @import "./effect.scss";
 @import "./header.scss";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -181,7 +180,6 @@ a {
   }
 
   &__arrivals {
-
     & .img {
       color: #3c4242;
       width: 13.586px;
@@ -302,7 +300,6 @@ a {
       width: 100%;
       display: flex;
       margin: 0 auto;
-
     }
 
     &-items {
@@ -338,7 +335,7 @@ a {
       }
 
       &-title {
-        color: #FFF;
+        color: #fff;
         font-family: "Core";
         font-size: 34px;
         font-weight: 800;
@@ -346,14 +343,14 @@ a {
       }
 
       &-text {
-        color: #FFF;
+        color: #fff;
         font-family: "Causten";
         font-size: 22px;
         font-weight: 300;
       }
 
       &-btn {
-        color: #3C4242;
+        color: #3c4242;
         text-align: center;
         font-family: "Causten";
         font-size: 17px;
@@ -367,7 +364,7 @@ a {
         align-items: center;
         gap: 12px;
         border-radius: 8px;
-        background: #FFF;
+        background: #fff;
         border: 1px solid black;
       }
     }
@@ -408,29 +405,75 @@ a {
           flex-direction: column;
           align-items: flex-start;
           gap: 3.91px;
-          width:179.31px;
-          height:42.45px;
+          width: 179.31px;
+          height: 42.45px;
         }
 
         &-title {
-          color: #2A2F2F;
+          color: #2a2f2f;
           font-size: 17.875px;
           font-weight: 700;
         }
 
         &-p {
-          color: #7F7F7F;
+          color: #7f7f7f;
           font-size: 13.407px;
 
           letter-spacing: -0.536px;
         }
 
-        &-arrow {}
+        
+      }
+    }
+  }
+  &__reviews {
+    &-items {
+      display: flex;
+      width: 1237px;
+      align-items: flex-start;
+      gap: 23.194px;
+      flex-shrink: 0;
+    }
+    &-item {
+      display: flex;
+      width: 396.874px;
+      padding: 23.194px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1.9px solid #bebcbd;
+      background: #fff;
+      &-imgs {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+      }
+      &-title {
+        color: #3c4242;
+        text-align: center;
+        font-family: "Core";
+        font-size: 22px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.44px;
+      }
+      &-text {
+        overflow: hidden;
+        color: #807d7e;
+        text-overflow: ellipsis;
+        font-family: "Causten";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.28px;
       }
     }
   }
 }
-
 
 .main__saving-block {
   display: grid;
@@ -442,39 +485,6 @@ a {
   height: 806px;
 }
 
-// .main__saving-card:nth-of-type(1) {
-//   grid-column: 1/2;
-//   &-title {
-//     color: #fff;
-//     font-family: "Core";
-//     font-size: 28px;
-//     font-weight: 600;
-//     line-height: 38.431px;
-//     letter-spacing: 0.56px;
-//   }
-//   &-descr {
-//     color: #fff;
-//     font-family: "Causten";
-//     font-size: 14px;
-//     font-weight: 600;
-//   }
-//   &-dsc {
-//     color: #fff;
-//     font-family: "Causten";
-//     font-size: 18px;
-//     font-weight: 700;
-//   }
-//   &-arrow {
-//     display: block;
-//   }
-//   &-btn {
-//     color: #fff;
-//     text-align: center;
-//     font-family: 'Causten';
-//     font-size: 12px;
-//     font-weight: 500;
-//   }
-// }
 .main__saving-card:nth-of-type(2) {
   grid-column: 2/4;
   padding: 34px 25px 40px 193px;
@@ -644,5 +654,4 @@ a {
     width: 30.622px;
     height: 25px;
   }
-
 }
