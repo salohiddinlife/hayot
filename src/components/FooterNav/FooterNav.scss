@@ -1,0 +1,29 @@
+.footer{
+    &__nav {
+        padding: 60px 0 0 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        &-title  h2 {
+            color: rgb(246, 246, 246);
+            font-family: 'Causten';
+            font-size: 28.58px;
+            font-weight: 700;
+            line-height: 216.9%;
+            text-align: left;
+        }
+    
+        &-link {
+            color: rgb(246, 246, 246);
+            font-family: 'Causten';
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 216.9%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+
+
+}

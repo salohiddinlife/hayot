@@ -11,7 +11,6 @@ export const useProductsStore = defineStore({
       try {
         const response = await axios.get("https://65a7bd4094c2c5762da76bd2.mockapi.io/hayot/v1/Category");
         this.products = response.data[0];
-        console.log(response.data[0]);
       } catch (error) {
         console.error("Error fetching images:", error);
       }

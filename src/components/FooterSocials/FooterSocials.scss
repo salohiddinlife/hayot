@@ -1,0 +1,35 @@
+.footer {
+        & .container{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+    &__socials {
+        display: flex ;
+        
+        &-box {
+            width: 178px;
+            height: 37.02px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & div {
+                max-width: 37.02px;
+                max-height: 37.02px;
+                width: 100%;
+                height: 100%;
+                background: rgb(246, 246, 246);
+                display: grid;
+                place-items: center;
+                border-radius: 10.68px;
+
+                & .social__icon {
+                    background: transparent;
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+            }
+        }
+    }
+}

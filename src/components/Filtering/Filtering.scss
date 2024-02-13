@@ -1,0 +1,40 @@
+.filter {
+    width: 20.49%;
+    border-top: 0;
+    border-right: 1px solid rgb(190, 188, 189);
+    border-bottom: 1px solid rgb(190, 188, 189);
+    border-left: 1px solid rgb(190, 188, 189);
+    &__title{
+        padding: 20px 30px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(190, 188, 189);
+
+    }
+
+    &__categories {
+        padding: 40px 33px;
+
+        &-content {
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            &-link {
+                color: rgb(138, 137, 137);
+                font-family: 'Causten';
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
