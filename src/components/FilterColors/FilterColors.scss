@@ -1,0 +1,27 @@
+.filter__colors {
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 19px;
+        padding: 35px;
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+
+        & h2 {
+            color: rgb(138, 137, 137);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+
+}

@@ -3,9 +3,9 @@
     <h2>Colors</h2>
     <img src="/src/assets/img/category__arrow.svg" alt="" />
   </div>
-  <div class="filter__colors">
+  <div class="filter__colors" v-if="colors">
     <div class="filter__colors-cards">
-      <div class="filter__colors-card" v-for="{ data, id } in colors" :key="id">
+      <div class="filter__colors-card"  v-for="data in colors" :key="data.id">
         <img :src="`/src/assets/img/colors/${data.uri}`" alt="" />
         <h2>{{ data.title }}</h2>
       </div>

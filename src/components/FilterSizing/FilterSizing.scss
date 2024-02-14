@@ -1,0 +1,26 @@
+.filter__sizing {
+    &-sizes{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 19px;
+        padding: 35px;
+    }
+    &-size {
+        width: 61px;
+        height: 32px;
+        box-sizing: border-box;
+        border: 1px solid rgb(190, 188, 189);
+        border-radius: 8px;
+        opacity: 0.8;
+        display: grid;
+        place-items: center;
+        text-transform: uppercase;
+        & h2 {
+            color: rgb(60, 66, 66);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+        }
+    }
+}
