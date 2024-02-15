@@ -1,8 +1,5 @@
 <template>
-    <div class="filter__title">
-      <h2>Size</h2>
-      <img src="/src/assets/img/category__arrow.svg" alt="" />
-    </div>
+ <FilterTitle type="size" />
   <div class="filter__sizing">
     <div class="filter__sizing-sizes" >
         <div class="filter__sizing-size" v-for="data in sizes" :key="data.id">

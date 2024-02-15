@@ -1,13 +1,14 @@
 <template>
-    <div class="filter__title">
-      <h2>Dress Style</h2>
-      <img src="/src/assets/img/category__arrow.svg" alt="" />
-    </div>
+ <FilterTitle type="style" />
   <div class="filter__style">
     
   </div>
 </template>
 
-<script setup></script>
+<script setup>
 
-<style lang="scss" scoped></style>
+
+</script>
+
+<style lang="scss" scoped>
+</style>

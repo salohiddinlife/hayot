@@ -1,8 +1,5 @@
 <template>
-    <div class="filter__title" style="border-top: none;">
-      <h2>Categories</h2>
-      <img src="/src/assets/img/category__arrow.svg" alt="" />
-    </div>
+ <FilterTitle type="categories" />
  <div class="filter__categories">
         <div class="filter__categories-content">
             <ul  class="filter__categories-content-list">

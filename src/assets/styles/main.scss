@@ -1,27 +1,30 @@
 @import "./vars.scss",
-        "./font.scss",
-        "./effect.scss",
-        "./header.scss",
-        "@/components/Footer/Footer.scss",
-        "@/components/Header/Header.scss",
-        "@/components/Main/Main.scss",
-        "@/components/MainArrivals/MainArrivals.scss",
-        "@/components/MainCard/MainCard.scss",
-        "@/components/MainFashion/MainFashion.scss",
-        "@/components/MainForMens/MainForMens.scss",
-        "@/components/MainForWomens/MainForWomens.scss",
-        "@/components/MainReviews/MainReviews.scss",
-        "@/components/MainSaleProducts/MainSaleProducts.scss",
-        "@/components/MainSaving/MainSaving.scss",
-        "@/components/MainSlider/MainSlider.scss",
-        '@/components/FooterNav/FooterNav.scss',
-        '@/components/Copyright/Copyright.scss',
-        '@/components/Filtering/Filtering.scss',
-        '@/components/FilterPricing/FilterPricing.scss',
-        '@/components/FilterColors/FilterColors.scss',
-        '@/components/FilterSizing/FilterSizing.scss',
-        '@/components/FooterSocials/FooterSocials.scss';
-        
+"./font.scss",
+"./effect.scss",
+"./header.scss",
+"./scrollbar.scss",
+"@/components/Footer/Footer.scss",
+"@/components/Header/Header.scss",
+"@/components/Main/Main.scss",
+"@/components/MainArrivals/MainArrivals.scss",
+"@/components/MainCard/MainCard.scss",
+"@/components/MainFashion/MainFashion.scss",
+"@/components/MainForMens/MainForMens.scss",
+"@/components/MainForWomens/MainForWomens.scss",
+"@/components/MainReviews/MainReviews.scss",
+"@/components/MainSaleProducts/MainSaleProducts.scss",
+"@/components/MainSaving/MainSaving.scss",
+"@/components/MainSlider/MainSlider.scss",
+'@/components/FooterNav/FooterNav.scss',
+'@/components/Copyright/Copyright.scss',
+'@/components/Filtering/Filtering.scss',
+'@/components/FilterPricing/FilterPricing.scss',
+'@/components/FilterColors/FilterColors.scss',
+'@/components/FilterSizing/FilterSizing.scss',
+'@/components/FilterTitle/FilterTitle.scss',
+'@/components/FooterSocials/FooterSocials.scss'
+;
+
 
 * {
   margin: 0;
@@ -53,10 +56,12 @@ ul {
 a {
   text-decoration: none;
 }
-body{
-    background: $bg;
+
+body {
+  background: $bg;
 }
-#app{
+
+#app {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;

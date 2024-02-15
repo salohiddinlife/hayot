@@ -1,8 +1,5 @@
 <template>
-  <div class="filter__title">
-    <h2>Colors</h2>
-    <img src="/src/assets/img/category__arrow.svg" alt="" />
-  </div>
+ <FilterTitle type="colors" />
   <div class="filter__colors" v-if="colors">
     <div class="filter__colors-cards">
       <div class="filter__colors-card"  v-for="data in colors" :key="data.id">

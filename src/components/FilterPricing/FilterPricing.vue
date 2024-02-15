@@ -1,8 +1,5 @@
 <template>
-    <div class="filter__title">
-      <h2>Price</h2>
-      <img src="/src/assets/img/category__arrow.svg" alt="" />
-    </div>
+    <FilterTitle type="price" />
   <section class="filter__pricing">
 
     <div class="range-slider">

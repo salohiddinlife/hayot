@@ -1,13 +1,10 @@
 <template>
-    <div>
-
-    </div>
+  <Filtering type="women" />
+  <main class="main"></main>
 </template>
 
 <script setup>
-
+import Filtering from '@/components/Filtering/Filtering.vue'
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -1,5 +1,5 @@
 <template>
-<Filtering/>
+<Filtering type="men"/>
 <main class="main">
     
 </main>
