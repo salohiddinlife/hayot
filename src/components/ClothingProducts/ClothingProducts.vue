@@ -5,8 +5,10 @@
 </template>
 
 <script setup>
+import { useProducts } from "@/store/products";
 const props = defineProps(['type'])
-console.log(props.type);
+const products = useProducts()
+products.getProducts({ type: props.type })
 </script>
 
 <style lang="scss" scoped>

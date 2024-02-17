@@ -37,9 +37,9 @@
 
 <script setup>
 import { computed, onMounted } from "vue";
-import { useProductsStore } from "@/store/categories";
+import { useCategoriesStore } from "@/store/categories";
 
-const store = useProductsStore();
+const store = useCategoriesStore();
 
 store.getImgs();
 

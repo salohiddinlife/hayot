@@ -1,7 +1,7 @@
 <template>
   <div class="clothing">
-    <ClothingTitle />
-    <ClothingProducts />
+    <ClothingTitle :type="type" />
+    <ClothingProducts :type="type"/>
   </div>
 </template>
 
@@ -9,6 +9,8 @@
 
 import ClothingProducts from "../ClothingProducts/ClothingProducts.vue";
 import ClothingTitle from "../ClothingTitle/ClothingTitle.vue";
+const props = defineProps(['type']);
+const type = props.type;
 </script>
 
 <style lang="scss" scoped></style>

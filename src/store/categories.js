@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { defineStore } from 'pinia';
 
-export const useProductsStore = defineStore({
-  id: 'products',
+export const useCategoriesStore = defineStore({
+  id: 'categories',
   state: () => ({
     products: null,
   }),
