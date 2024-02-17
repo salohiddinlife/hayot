@@ -1,8 +1,12 @@
 <template>
-<Filtering type="men"/>
-<main class="main main__clothing">
+<div class="DIV">
+    <aside class="filter">
+    <Filtering type="men"/>
+</aside>
+<main class="main__clothing-men">
     <Clothing :type="type"/>
 </main>
+</div>
 </template>
 
 <script setup>
@@ -12,4 +16,8 @@ const type = 'men';
 </script>
 
 <style lang="scss" scoped>
+.DIV{
+    display: flex;
+    flex-wrap: wrap;
+}
 </style>

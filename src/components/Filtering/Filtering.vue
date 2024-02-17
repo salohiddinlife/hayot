@@ -1,5 +1,5 @@
 <template>
-    <aside class="filter">
+    <div >
         <FilterHeader @isHeaderActive="updateIsHeaderActive" />
         <div class="filter__content" v-if="isHeaderActive">
             <FilterCategory />
@@ -8,7 +8,7 @@
             <FilterSizing />
             <FilterStyle />
         </div>
-    </aside>
+    </div>
 </template>
 
 <script setup>
@@ -28,4 +28,6 @@ const updateIsHeaderActive = (newValue) => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

@@ -1,0 +1,10 @@
+.clothing__header {
+    margin: 50px 100px 0 150px;
+    &-title {
+        color: rgb(63, 70, 70);
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 26px;
+        text-transform: capitalize;
+    }
+}
