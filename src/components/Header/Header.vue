@@ -18,15 +18,15 @@
         <input placeholder="Search" type="search" class="header__input" />
       </div>
       <div class="header__btns">
-        <span class="header__btns-btn">
+        <RouterLink to="/liked" class="header__btns-btn">
           <img src="@/assets/img/heart.svg" alt="" />
-        </span>
-        <span class="header__btns-btn">
+        </RouterLink>
+        <RouterLink to="/profile" class="header__btns-btn">
           <img src="@/assets/img/user.svg" alt="" />
-        </span>
-        <span class="header__btns-btn">
+        </RouterLink>
+        <RouterLink to="/cart" class="header__btns-btn">
           <img src="@/assets/img/cart.svg" alt="" />
-        </span>
+        </RouterLink>
       </div>
     </div>
   </header>
