@@ -1,6 +1,7 @@
 <template>
   <div class="clothing__products">
-    <div
+    <RouterLink
+      :to="'/product/' + item.id"
       class="clothing__products-item"
       v-for="(item, idx) in content"
       :key="idx"
@@ -31,7 +32,7 @@
           ><p>${{ item.price }}</p></span
         >
       </div>
-    </div>
+    </RouterLink>
   </div>
 </template>
 
@@ -45,9 +46,9 @@ const content = ref([]);
 
 const loadProducts = async () => {
   await products.getProducts();
-  content.value = products.regProducts.map(product => ({
+  content.value = products.regProducts.map((product) => ({
     ...product,
-    liked: false
+    liked: false,
   }));
 };
 
@@ -57,22 +58,24 @@ const liked = (item) => {
 };
 
 const updateLocalStorage = () => {
-  localStorage.setItem('likedProducts', JSON.stringify(content.value));
+  localStorage.setItem("likedProducts", JSON.stringify(content.value));
 };
 
 onMounted(() => {
   loadProducts();
-  const likedProducts = JSON.parse(localStorage.getItem('likedProducts'));
-  if (likedProducts && Array.isArray(likedProducts)) { 
+  const likedProducts = JSON.parse(localStorage.getItem("likedProducts"));
+  if (likedProducts && Array.isArray(likedProducts)) {
     content.value.forEach((item, index) => {
-      if (likedProducts[index] && typeof likedProducts[index].liked === 'boolean') {
+      if (
+        likedProducts[index] &&
+        typeof likedProducts[index].liked === "boolean"
+      ) {
         item.liked = likedProducts[index].liked;
       }
     });
   }
 });
 </script>
-
 
 <style lang="scss" scoped>
 .product__status {
@@ -94,7 +97,7 @@ onMounted(() => {
   animation: bounce-in 0.5s;
 }
 .bounce-leave-active {
-  animation: bounce-in .5s reverse;
+  animation: bounce-in 0.5s reverse;
 }
 @keyframes bounce-in {
   0% {
