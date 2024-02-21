@@ -1,39 +1,42 @@
 <template>
-  <div class="clothing__products">
-    <RouterLink
-      :to="'/product/' + item.id"
+  <!-- <div class="clothing__products" v-if="content">
+    <div
       class="clothing__products-item"
       v-for="(item, idx) in content"
       :key="idx"
     >
-      <span class="clothing__products-item-heart" @click="liked(item)">
-        <Transition name="bounce">
-          <img src="/src/assets/img/heart.svg" v-if="!item.liked" />
-          <img src="/src/assets/img/heart-solid.svg" v-else alt="" />
-        </Transition>
-      </span>
-      <img class="clothing__products-item-img" :src="item.thumbnail" alt="" />
-      <div class="clothing__products-item-descr">
-        <div>
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.brand }}’s Brand</p>
-          <span class="product__status">
-            <img
-              :src="
-                item.stock > 0
-                  ? '/src/assets/img/checked.svg'
-                  : '/src/assets/img/not_checked.svg'
-              "
-            />
-            <h3>{{ item.stock > 0 ? "in stock" : "out of stock" }}</h3>
-          </span>
+    <span class="clothing__products-item-heart" @click="liked(item)">
+          <Transition name="bounce">
+            <img src="/src/assets/img/heart.svg" v-if="!item.liked" />
+            <img src="/src/assets/img/heart-solid.svg" v-else alt="" />
+          </Transition>
+        </span>
+      <RouterLink :to="'/product/' + item.id" class="clothing__products-item">
+        
+        <img class="clothing__products-item-img" :src="item.thumbnail" alt="" />
+        <div class="clothing__products-item-descr">
+          <div>
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.brand }}’s Brand</p>
+            <span class="product__status">
+              <img
+                :src="
+                  item.stock > 0
+                    ? '/src/assets/img/checked.svg'
+                    : '/src/assets/img/not_checked.svg'
+                "
+              />
+              <h3>{{ item.stock > 0 ? "in stock" : "out of stock" }}</h3>
+            </span>
+          </div>
+          <span class="clothing__products-item-price"
+            ><p>${{ item.price }}</p></span
+          >
         </div>
-        <span class="clothing__products-item-price"
-          ><p>${{ item.price }}</p></span
-        >
-      </div>
-    </RouterLink>
-  </div>
+      </RouterLink>
+    </div>
+  </div> -->
+  <Loader/>
 </template>
 
 <script setup>
